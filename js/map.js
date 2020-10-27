@@ -42,7 +42,7 @@ window.addEventListener('resize', function () {
 });
 
 // Map options
-map.scrollWheelZoom.enable(); // handle zooming/scrolling
+map.scrollWheelZoom.disable(); // handle zooming/scrolling
 
 var zoom = L.control.zoom({ // add zoom control
     position: 'topright'
@@ -102,7 +102,7 @@ function changeLayer(id) {
     }).addTo(map);
 
     // show legend (if legend is Hauptboden, then do not display because of size)
-    if (dataLayerName !== 'Hauptboden') {
+    //if (dataLayerName !== 'Hauptboden') {
         legend.onAdd = function () {
             // create legend
             var div = L.DomUtil.create('div', 'info legend');
@@ -112,7 +112,7 @@ function changeLayer(id) {
             return div;
         };
         legend.addTo(map);
-    }
+    //}
 }
 
 // generate map
