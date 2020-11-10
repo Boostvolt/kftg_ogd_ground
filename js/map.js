@@ -42,7 +42,7 @@ window.addEventListener('resize', function () {
 });
 
 // Map options
-map.scrollWheelZoom.enable(); // handle zooming/scrolling
+map.scrollWheelZoom.disable(); // handle zooming/scrolling
 
 var zoom = L.control.zoom({ // add zoom control
     position: 'topright'
