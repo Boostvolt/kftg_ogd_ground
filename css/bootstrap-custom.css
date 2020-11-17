@@ -45,8 +45,7 @@ nav {
     text-align: left;
     line-height: 18px;
     color: #555;
-    width: auto;
-    max-width: 35vh;
+    max-width: 100%;
 }
 
 .legend img {
@@ -55,4 +54,12 @@ nav {
     opacity: 0.7;
 }
 
+.leaflet-right{
+    overflow-y: auto;
+    max-height: inherit;
+}
+
+.leaflet-control-container{
+    max-height: 100%;
+}
 

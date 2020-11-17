@@ -1,5 +1,5 @@
 // global variables
-var mapname = 'ckhbrqz200sfm19l8s1kllc5p';
+const mapname = 'ckhbrqz200sfm19l8s1kllc5p';
 var dataLayerName = '';
 var wmsLayer = '';
 var maplayer = '';
@@ -101,7 +101,6 @@ function changeLayer(id) {
         layers: dataLayerName
     }).addTo(map);
 
-    // show legend (if legend is Hauptboden, then do not display because of size)
     legend.onAdd = function () {
         // create legend
         var div = L.DomUtil.create('div', 'info legend');
@@ -115,3 +114,4 @@ function changeLayer(id) {
 
 // generate map
 changeMapStyle(mapname);
+$("#tgKarteStreets").prop("checked", true);
