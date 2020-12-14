@@ -1,5 +1,5 @@
 # kftg_ogd_ground
 
-## Lizent
+## Lizenz
 
 Copyright © 2020 Jan Kott. Alle Rechte vorbehalten.
